@@ -74,6 +74,17 @@ body{
     background-color:tomato;
     margin: 12px;
 }
+#canvasWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#canvas{
+    height: 800px;
+    width: 800px;
+    margin: auto;
+}
+
 
 @media (max-width: 800px) {
     #intro{
