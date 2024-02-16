@@ -11,12 +11,20 @@ body{
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 42px;
     font-weight: 100;
 }
-
+#home{
+    padding-left:8px;
+}
+#header>span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#header a{
+    color: white;
+}
 #intro{
     color:black;
     width: 840px;
@@ -35,8 +43,11 @@ body{
     line-height: 16px;
 }
 #resume{
-    height:100%;
     border: 1px solid black;
+    display: block;
+}
+#showResume{
+    display: none;
 }
 #linkedin{
     height: 30px;
@@ -63,3 +74,25 @@ body{
     background-color:tomato;
     margin: 12px;
 }
+
+@media (max-width: 800px) {
+    #intro{
+        width: 100%;
+        display: block;
+        height: fit-content;
+    }
+    #text{
+        line-height: 9px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+    #resume{
+        width: 100%;
+        border: none;
+        display: none;
+    }
+    #showResume{
+        display: block;
+    }
+  }
