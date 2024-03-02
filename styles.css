@@ -112,7 +112,7 @@ body{
     height: 800px;
     width: 800px;
     border:1px solid black;
-    cursor:url(./files/icons8-pen-16.png) 0 12, pointer;
+    cursor:url(./files/pencil.png) 0 16, pointer;
 }
 #controls{
     width: 30px;
