@@ -101,6 +101,6 @@ window.onload = () => {
 	controlsEle.appendChild(trashcan);
 
 	if (window !== window.parent) {
-		document.getElementById('header').style.display = 'none';
+		document.getElementById('header').style.visibility = 'hidden';
 	}
 };
