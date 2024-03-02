@@ -25,13 +25,17 @@ window.onload = () => {
 		'rgb(0 128 128)', // Teal
 		'rgb(0 0 128)', // Navy
 	];
-
+	function setColor(color) {
+		ctx.fillStyle = color;
+		ctx.strokeStyle = color;
+	}
 	let sizes = [20, 15, 10, 5];
 	let activeSize = sizes[2];
+	let prevSpot = null;
 
-	ctx.fillStyle = commonColors[0];
+	setColor(commonColors[0]);
 	ctx.fillRect(0, 0, widthPX, widthPX);
-	ctx.fillStyle = commonColors[1];
+	setColor(commonColors[1]);
 	let rect = canvas.getBoundingClientRect();
 
 	let isMouseDown = false;
@@ -40,6 +44,7 @@ window.onload = () => {
 	}
 	function mouseup(e) {
 		isMouseDown = false;
+		prevSpot = null;
 	}
 	function whilemousedown(e) {
 		if (isMouseDown) {
@@ -48,6 +53,15 @@ window.onload = () => {
 			ctx.beginPath();
 			ctx.arc(x, y, activeSize, 0, 2 * Math.PI);
 			ctx.fill();
+
+			if (prevSpot != null) {
+				ctx.beginPath();
+				ctx.moveTo(prevSpot.x, prevSpot.y);
+				ctx.lineTo(x, y);
+				ctx.lineWidth = activeSize * 2;
+				ctx.stroke();
+			}
+			prevSpot = { x, y };
 		}
 	}
 
@@ -60,7 +74,7 @@ window.onload = () => {
 	for (let color of commonColors) {
 		let colorControl = document.createElement('div');
 		colorControl.onclick = () => {
-			ctx.fillStyle = color;
+			setColor(color);
 		};
 		colorControl.style.border = '1px solid black';
 		colorControl.style.backgroundColor = color;
