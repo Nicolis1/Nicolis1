@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agnelli</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="./files/climbing.png">
+    <link rel="icon" type="image/x-icon" href="./files/climbing.png?">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,8 +36,23 @@
                         <div class="pricing">
                             <strong>Pricing:</strong>
                             <ul>
-                                <li>1 hour - $30 <button>Book a 1hr session</button></li>
-                                <li>1.5hours - $40 <button>Book a 1.5hr session</button></li>
+                                <li>1 hour - $30 <!-- Google Calendar Appointment Scheduling begin -->
+                                    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                                    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                                    <script>
+                                    (function() {
+                                      var target = document.currentScript;
+                                      window.addEventListener('load', function() {
+                                        calendar.schedulingButton.load({
+                                          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ12ZKKIaukwUbDZhiEs9K0XEnHHprYhA_gS_reCcB2gCdpDe8UO30jcYQK1j0ze7uPSWQQk4AF-?gv=true',
+                                          color: '#039BE5',
+                                          label: 'Book Your Session',
+                                          target,
+                                        });
+                                      });
+                                    })();
+                                    </script>
+                                    <!-- end Google Calendar Appointment Scheduling --></li>
                             </ul>
                         </div>
                         <div>
@@ -49,7 +64,8 @@
 
                         </div>
                     </div>
-                    <p>Sessions are $30 for 1 hour. You can pay with cash, Venmo, Zelle, or Paypal after our session</p>
+                    <p>You can pay with cash, Venmo, Zelle, or Paypal after our session</p>
+                    <p>You'll also need to purchase a daypass or membership at the gym</p>
             </div>
         </div>
         </div>
