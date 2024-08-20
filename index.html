@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agnelli</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="./files/lamp-2.png">
+    <link rel="icon" type="image/x-icon" href="./files/climbing.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,59 +16,81 @@
 
     <!-- End Fonts -->
 </head>
-<body onload="init()">
-    
+<body>
     <div id="header">
-        <div id="home">
-            <a href="./index.html"> <i class="fa fa-home"></i></a>
-        </div>
-        <span>Agnelli</span>
+        <span>
+        <h1>Boulder Better</h1>
+        <h3>With Private Coaching From Joe Agnelli</h3>
+    </span>
     </div>
-    
-    <div id="intro">
-        <div id="text">    
-            <p>
-                A remarkably talented frontend and javascript developer
-            </p>
-            <p>
-                Fond of startups, A/B testing, and learning
-            </p>
-            <p>
-                Former growth engineer at Meta
-            </p>
-            <p>
-                Open to new opportunites
-            </p>
-            <p>
-                <a href="mailto:joeyagnelli@gmail.com">Contact me</a>
-            </p>
-            <p>
-                <img class="imgLink" id="linkedin" src="./files/LI-In-Bug.png" alt="image link to Joseph Agnelli's linkedin page"/>
-            </p>
-            <button id="showResume">Show Resume</button>
+    <div class="slideshow">
+        <div class="slide">
+            <div class="title">Bio</div>
+            <div class="wrapper">
+                <img src="./files/indoor.png" alt="Joe climbing on red slopers indoors"/>
+                <div>
+                    <p>Hello!</p><p>I'm Joe, a passionate climbing coach with 7 years of experience in the climbing world.</p>
+                    <p> My journey began as a hobby, but it quickly grew into a lifelong passion that I now have the privilege to share with others.</p>
+                    <p>Whether you're a beginner looking to get started, or an experienced climber aiming to refine your skills, I'm here to help you reach new heights.</p>
+                    <div class="InfoWrapper">
+                        <div class="pricing">
+                            <strong>Pricing:</strong>
+                            <ul>
+                                <li>1 hour - $30 <button>Book a 1hr session</button></li>
+                                <li>1.5hours - $40 <button>Book a 1.5hr session</button></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Contact:</strong>
+                            <ul>
+                                <li>(603)-707-6626</li>
+                                <li>JoeBouldering@gmail.com</li>
+                            </ul>
 
+                        </div>
+                    </div>
+                    <p>Sessions are $30 for 1 hour. You can pay with cash, Venmo, Zelle, or Paypal after our session</p>
+            </div>
         </div>
-        <img class="imgLink" id="resume" src="./files/resumeImg.png" alt="image link to Joseph Agnelli's resume"/>
-         
-
+        </div>
+        <div class="slide">
+            <div class="title">Coaching Philosophy</div>
+            <div class="wrapper">
+                <div>
+                <p>
+                    My coaching philosophy is holistic, integrating physical training, mental resilience, and technical skills. </p>
+                    <p>Here are the key elements:</p>
+                    <ol>
+                    <li><strong>Personalized Training</strong>: Tailored plans that address your unique strengths, weaknesses, and goals.</li>
+                    <li><strong>Mental Resilience</strong>: Techniques to enhance focus, manage fear, and stay motivated.</li>
+                    <li><strong>Injury Prevention</strong>: Safe practices, conditioning exercises, and recovery strategies for long-term health.</li>
+                    <li><strong>Efficient Training</strong>: High-quality, targeted sessions to maximize progress.</li>
+                    <li><strong>Continuous Learning</strong>: Embracing new techniques and methods for ongoing improvement.</li>
+                    </ol>   
+                    <p>By combining these elements, I help you climb safely, efficiently, and effectively, achieving your full potential.</p>
+                </div>
+                <img src="./files/golden.png" alt="Joe climbing outdoors on golden-colored rock"/>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="title">What to Expect in Our Sessions</div>
+            <div class="wrapper">
+                <img src="./files/out_crack.jpeg" alt="Joe hand-jamming outdoors on a granite boulder"/>
+                <div>
+                <p>
+                    Ultimately, our sessions can take whatever shape will help you the most, but typically they'll follow this pattern: 
+                </p>
+                <ol>
+                    <li>Warm Up (You should do this before coming to our sessions to make the most of our limited time)</li>
+                    <li>Find a challening boulder for you to work on</li>
+                    <li>Use a combination of active demontrations and video analysis to work through the boulder</li>
+                    <li>Iterate across a number of differnt climbing styles to help you stay well rounded</li>
+                </ol>
+                <h4 style="text-align: center;">Remember: Climbing hard is about using technique to make boulders easier </h4>
+                <p>My goal is to help you learn technique on an intuitive level, so even difficult boulders feel easy</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="projects">
-        <div>
-            <div class = 'projectHeader'><a href="./projects/sand.html">Paint (this is an iframe!)</a></div>
-            <iframe src="./projects/sand.html"></iframe></div>
-        <div>
-            <div class = 'projectHeader'><a href="https://www.chessfightai.xyz/">Chess Fight</a></div>
-            <iframe src="https://www.chessfightai.xyz/"></iframe>
-        </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-
-
-    <script src="scripts.js"></script>
 </body>
 </html>
