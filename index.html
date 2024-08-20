@@ -37,21 +37,23 @@
                             <strong>Pricing:</strong>
                             <ul>
                                 <li>1 hour - $30 <!-- Google Calendar Appointment Scheduling begin -->
-                                    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-                                    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-                                    <script>
-                                    (function() {
-                                      var target = document.currentScript;
-                                      window.addEventListener('load', function() {
-                                        calendar.schedulingButton.load({
-                                          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ12ZKKIaukwUbDZhiEs9K0XEnHHprYhA_gS_reCcB2gCdpDe8UO30jcYQK1j0ze7uPSWQQk4AF-?gv=true',
-                                          color: '#039BE5',
-                                          label: 'Book Your Session',
-                                          target,
+                                    <span id="bookingLink"> 
+                                        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                                        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                                        <script>
+                                        (function() {
+                                        var target = document.currentScript;
+                                        window.addEventListener('load', function() {
+                                            calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ12ZKKIaukwUbDZhiEs9K0XEnHHprYhA_gS_reCcB2gCdpDe8UO30jcYQK1j0ze7uPSWQQk4AF-?gv=true',
+                                            color: '#039BE5',
+                                            label: 'Book Your Session',
+                                            target,
+                                            });
                                         });
-                                      });
-                                    })();
-                                    </script>
+                                        })();
+                                        </script>
+                                    </span>
                                     <!-- end Google Calendar Appointment Scheduling --></li>
                             </ul>
                         </div>

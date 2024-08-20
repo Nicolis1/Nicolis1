@@ -163,6 +163,8 @@ body{
 #desktopImage{display: block;}
 
 @media (max-width: 800px) {
+    #header,.slideshow .slide .title  {background-color: #011655};
+    
     #header{
         font-size: 30px;
     }
@@ -174,18 +176,26 @@ body{
         height: fit-content;
     }
     .slideshow .slide .wrapper{
-        background-color: black;
+        background-color: #00238B;
         width: 100%;
         height: fit-content;
         position: relative;
         display: inline-block;
+        box-sizing: border-box;
+        padding:20px;
     }
     .slideshow .slide .wrapper .content{
         position: absolute;
         top: 0;
         left:0;
         color: white;
-        font-size: 25px;
+        font-size: 26px;
+        box-sizing: border-box;
+        padding:20px;
+    }
+    #bookingLink *{
+        font-size: 30px;
+
     }
      
     .slideshow .slide img{
